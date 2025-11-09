@@ -1,3 +1,19 @@
+function handleMovement() {
+  let movingLeft = keys["arrowleft"] || keys["a"];
+  let movingRight = keys["arrowright"] || keys["d"];
+
+  if (movingLeft) {
+    playerX -= PLAYER_SPEED;
+    player.classList.add("walking");
+    player.style.transform = "scaleX(-1)"; // face left
+  } else if (movingRight) {
+    playerX += PLAYER_SPEED;
+    player.classList.add("walking");
+    player.style.transform = "scaleX(1)"; // face right
+  } else {
+    player.classList.remove("walking");
+  }
+
 // --- Basic setup ---
 const world = document.getElementById("world");
 const player = document.getElementById("player");
