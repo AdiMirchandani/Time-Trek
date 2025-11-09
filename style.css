@@ -17,8 +17,8 @@ body {
 /* Main game area */
 #game-container {
   position: relative;
-  width: 800px;
-  height: 400px;
+  width: 1700px;
+  height: 850px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
