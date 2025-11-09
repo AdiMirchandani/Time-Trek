@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Time Trek: Discovering Mesopotamia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="world">
+      <!-- Background scenery -->
+      <div class="background layer ground"></div>
+      <div class="background layer river"></div>
+      <div class="background layer city"></div>
+
+      <!-- Player -->
+      <div id="player"></div>
+
+      <!-- Artifacts -->
+      <div
+        class="artifact"
+        id="artifact-cuneiform"
+        data-x="450"
+        data-type="cuneiform"
+      ></div>
+
+      <div
+        class="artifact"
+        id="artifact-plow"
+        data-x="900"
+        data-type="plow"
+      ></div>
+
+      <div
+        class="artifact"
+        id="artifact-irrigation"
+        data-x="1350"
+        data-type="irrigation"
+      ></div>
+
+      <div
+        class="artifact"
+        id="artifact-wheel"
+        data-x="1800"
+        data-type="wheel"
+      ></div>
+
+      <div
+        class="artifact"
+        id="artifact-math"
+        data-x="2200"
+        data-type="math"
+      ></div>
+    </div>
+
+    <!-- HUD (Heads Up Display) -->
+    <div id="hud">
+      <div id="message">
+        Use ← → or A/D to move. Press E near an object to inspect it.
+      </div>
+      <div id="found">Artifacts found: 0 / 5</div>
+    </div>
+
+    <!-- Popup (description window) -->
+    <div id="popup" class="hidden">
+      <div id="popup-content">
+        <h2 id="popup-title"></h2>
+        <p id="popup-text"></p>
+        <button id="popup-close">Close (Space / Enter / Click)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
